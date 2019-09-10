@@ -1,41 +1,61 @@
 <html lang='en'>
+<style>
+.header img {
+ float: left;
+ width: 221px;
+ height: 54px;
+}
+.header h1 {
+ position: relative;
+ top: 18px;
+ left: 10px;
+}
+</style>
+<div class="header">
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/bNgW5JT/logo-light.png" alt="logo-light" border="0"></a>
+ <center>
+ <h1> Classify Nature Images </h1>
+ <p>
+     Use images of <strong>Sea</strong>, <strong>Mountain</strong>, <strong>Glacier</strong> ,<strong>Forest</strong>,<strong>Street</strong>,<strong>Buildings</strong> or
+     all Four!
+   </p>
+ </center>
+</div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
 <head>
-  <meta charset='utf-8'>
-  <link rel='stylesheet' href='../static/style.css'>
-  <script src='../static/client.js'></script>
+ <meta charset='utf-8'>
+ <link rel='stylesheet' href='../static/style.css'>
+ <script src='../static/client.js'></script>
 </head>
 <body>
 <div>
-  <div class='center'>
-    <div class='title'>Classify Dog Images 🐶</div>
-    <p>
-      Use images of <strong>Afghan_hound</strong>, <strong>Boston_bull</strong>, <strong>Italian_greyhound</strong>,<strong>German_shepherd</strong> or
-      all three!
-    </p>
-    <div class='content'>
-      <div class='no-display'>
-        <input id='file-input'
-               class='no-display'
-               type='file'
-               name='file'
-               accept='image/*'
-               onchange='showPicked(this)'>
-      </div>
-      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
-      <div class='upload-label'>
-        <label id='upload-label'>No file chosen</label>
-      </div>
-      <div>
-        <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
-      </div>
-      <div class='analyze'>
-        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
-      </div>
-      <div class='result-label'>
-        <label id='result-label'></label>
-      </div>
-    </div>
-  </div>
+ <div class='center'>
+   <div class='content'>
+     <div class='no-display'>
+       <input id='file-input'
+              class='no-display'
+              type='file'
+              name='file'
+              accept='image/*'
+              onchange='showPicked(this)'>
+     </div>
+     <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+     <div class='upload-label'>
+       <label id='upload-label'>No file chosen</label>
+     </div>
+     <div>
+       <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+     </div>
+     <div class='analyze'>
+       <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+     </div>
+     <div class='result-label'>
+       <label id='result-label'></label>
+     </div>
+   </div>
+ </div>
 </div>
 </body>
 </html>
